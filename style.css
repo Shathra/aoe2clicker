@@ -3,6 +3,13 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-image: url("assets/paper8.jpg");
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+
+	text-decoration: none;
+	color: #000000;
 }
 
 #container {
@@ -51,4 +58,57 @@ body {
 	margin-top: -20px;
 	left: 50%;
 	margin-left: -20px;
+}
+
+#main {
+
+	background: #ffffff;
+	height: 500px;
+}
+
+#units {
+
+	/*padding-left: 15px;*/
+	width: 50%;
+	float: left;
+}
+
+.unit {
+
+	padding-left: 15px;
+}
+
+.unit .unit_name {
+
+	display: inline-block;
+	padding: 10px;
+	width: 100px;
+}
+
+.unit .unit_count {
+
+	display: inline-block;
+	width: 100px;
+}
+
+.unit .unit_cost {
+
+	display: inline-block;
+}
+
+.unit .unit_cost img {
+
+	width: 20px;
+	height: 20px;
+}
+
+#buildings {
+
+	width: 50%;
+	float: left;
+}
+
+.clear {
+
+	clear: both;
 }
