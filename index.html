@@ -9,12 +9,8 @@
 
 	<link rel="stylesheet" href="style.css">
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
 
 </head>
@@ -22,14 +18,20 @@
 <body>
 	<div id='container'>
 		<div id='banner'>
+			<img src='assets/banner.png'>
 		</div>
 		<div id='clicker'>
 			<a href='#' id='click_wood' class='click_resource'><img src='assets/wood.png'></a>
+			<span id='stat_wood'>0</span>
 			<a href='#' id='click_clay' class='click_resource'><img src='assets/clay.png'></a>
+			<span id='stat_clay'>0</span>
 			<a href='#' id='click_iron' class='click_resource'><img src='assets/iron.png'></a>
+			<span id='stat_iron'>0</span>
 			<a href='#' id='click_gold' class='click_resource'><img src='assets/gold.png'></a>
+			<span id='stat_gold'>0</span>
 		</div>
 	</div>
+	<script src="data.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

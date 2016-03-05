@@ -1,0 +1,17 @@
+body {
+
+	margin: 0px;
+	padding: 0px;
+	background-color: #f2e486;
+}
+
+#container {
+	margin: 0px auto;
+	width: 1000px;
+	background-color: #ffffff;
+}
+
+#clicker {
+
+	text-align: center;
+}
