@@ -76,13 +76,20 @@ a {
 .unit {
 
 	padding-left: 15px;
-	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	/*border: 1px solid #cccccc;*/
+}
+
+.unit img {
+
+	display: inline-block;
+	vertical-align:middle;
 }
 
 .unit .unit_name {
 
 	display: inline-block;
-	padding: 10px;
+	padding-left: 10px;
 	width: 100px;
 }
 
