@@ -73,38 +73,38 @@ a {
 	float: left;
 }
 
-.unit {
+.unit, .building {
 
 	padding-left: 15px;
 	margin-bottom: 10px;
 	/*border: 1px solid #cccccc;*/
 }
 
-.unit img {
+.unit img, .building img {
 
 	display: inline-block;
 	vertical-align:middle;
 }
 
-.unit .unit_name {
+.unit .unit_name, .building .unit_name {
 
 	display: inline-block;
 	padding-left: 10px;
 	width: 100px;
 }
 
-.unit .unit_count {
+.unit .unit_count, .building .unit_count {
 
 	display: inline-block;
 	width: 100px;
 }
 
-.unit .unit_cost {
+.unit .unit_cost, .building .unit_cost {
 
 	display: inline-block;
 }
 
-.unit .unit_cost img {
+.unit .unit_cost img, .building .unit_cost img {
 
 	width: 20px;
 	height: 20px;
