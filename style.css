@@ -2,16 +2,18 @@ body {
 
 	margin: 0px;
 	padding: 0px;
+	background-image: url("assets/paper8.jpg");
 	background-color: #f2e486;
 }
 
 #container {
 	margin: 0px auto;
 	width: 1000px;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 #clicker {
 
+	background-color: #ffffff;
 	text-align: center;
 }
