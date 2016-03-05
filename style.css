@@ -17,3 +17,9 @@ body {
 	background-color: #ffffff;
 	text-align: center;
 }
+
+#clicker a {
+
+	display: inline-block;
+	width: 200px;
+}
