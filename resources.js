@@ -1,5 +1,5 @@
 function construct_resource_stat(index){
-	$("#stat_"+index).text(resources[index].number);
+	$("#stat_"+index).text(round(resources[index].number));
 }
 
 function construct_all_resource_stat(){
