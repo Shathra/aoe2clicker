@@ -9,13 +9,20 @@ function construct_all_resource_stat(){
 }
 
 
+function increase(index, dps){
+	if(resources[index].number < resources[index].capacity){
+		if(dps > resources[index].capacity - resources[index].number)
+			dps = resources[index].capacity - resources[index].number;
+		resources[index].number += dps;
+		construct_resource_stat(index);
+	}
+}
+
+
 $(document).ready(function(){
 	$(document).on("click", ".click_resource", function(event){
 		event.preventDefault();
 		var index = $(this).attr('id').split("_")[1];
-		if(resources[index].number < resources[index].capacity){
-			resources[index].number += 1;
-			construct_resource_stat(index);
-		}
+		increase(index, 1);
 	});
 });
