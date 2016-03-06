@@ -4,6 +4,8 @@ var cps = 0;
 var ips = 0;
 var gps = 0;
 
+var dps = 0;
+
 var resources = [];
 var total_size = 0;
 
@@ -22,6 +24,8 @@ units["miner"] = {name: "Lumberjack", cost: [5,5,0,0], number: 0, size: 1, relat
 act: function(){ips += 1;}};
 units["merchant"] = {name: "Merchant", cost: [0,0,0,21], number: 0, size: 1, related: "gold",
 act: function(){gps += 1;}};
+units["slave"] = {name: "Slave", cost: [10,10,10,10], number: 0, size: 1, related: "",
+act: function(){dps += 1;}};
 
 units["house"] = {name: "House", cost: [10,5,5,5], number: 0, size: 0, related: "", 
 act: function(){unit_capacity += 10;}};

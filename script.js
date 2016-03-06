@@ -3,46 +3,59 @@ function round(num){
 	if(num<2000)
 			text = Math.floor(num);
 	else if(1000000>num && num>=2000){
-		num = Math.round(num);
-		var bin = Math.floor(num/1000);
-		num = num - 1000*bin;
-		if(num == 0)
-			text = bin + " Bin";
-		else
-			text = bin + " Bin " + num;
+		num = Math.round(num/100);
+		num = num/10;
+		text = num + "K";
 	}
 	else if(1000000000>num && num>=1000000){
 		num = Math.round(num/1000);
 		num = num/1000;
-		text = num + " Milyon";
+		text = num + "M";
 	}
 	else if(1000000000000>num && num>=1000000000){
 		num = Math.round(num/1000000);
 		num = num/1000;
-		text = num + " Milyar";
+		text = num + "B";
 	}
 	else if(num<1000000000000000 && num>=1000000000000){
 		num = Math.round(num/1000000000);
 		num = num/1000;
-		text = num + " Trilyon";
+		text = num + "T";
 	}
 	else if( num<1000000000000000000 && num>=1000000000000000){
 		num = Math.round(num/1000000000000);
 		num = num/1000;
-		text = num + " Katrilyon";
+		text = num + "P";
 	}
 	else if( num<1000000000000000000000 && num>=1000000000000000000){
 		num = Math.round(num/1000000000000000);
 		num = num/1000;
-		text = num + " Kentrilyon";
+		text = num + "E";
 	}
 	else if( num>=1000000000000000000000){
 		num = Math.round(num/1000000000000000000);
 		num = num/1000;
-		text = num + " Seksilyon";
+		text = num + "Z";
 	}
 	return text;
 }
+
+function xxxx(){
+	wps += 100000;
+	cps += 100000;
+	ips += 100000;
+	gps += 100000;
+
+	var interval = setInterval(function() {	
+		buy_unit("gold_storage");
+		buy_unit("wood_storage");
+		buy_unit("iron_storage");
+		buy_unit("clay_storage");
+		buy_unit("house");
+		buy_unit("merchant");
+	}, 1);
+}
+
 
 
 $(document).ready(function(){

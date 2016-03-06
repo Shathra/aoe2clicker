@@ -26,9 +26,16 @@ function is_there_room(index){
 }
 
 function buy_unit(index){
-	for(var i=0; i<resources_names.length; i++){
-		resources[resources_names[i]].number -= units[index].cost[i];
-	}	
+	if(is_unit_cost_satisfied(index) && is_there_room(index)){
+		units[index].number += 1;
+		total_size += units[index].size;
+		for(var i=0; i<resources_names.length; i++){
+			resources[resources_names[i]].number -= units[index].cost[i];
+		}	
+		construct_all_resource_stat();
+		construct_unit_stat(index);
+		units[index].act();
+	}
 }
 
 $(document).ready(function(){
@@ -37,14 +44,7 @@ $(document).ready(function(){
 	$(document).on("click", ".unit", function(event){
 		event.preventDefault();
 		var index = $(this).attr('id');
-		if(is_unit_cost_satisfied(index) && is_there_room(index)){
-			units[index].number += 1;
-			total_size += units[index].size;
-			buy_unit(index);
-			construct_all_resource_stat();
-			construct_unit_stat(index);
-			units[index].act();
-		}
+		buy_unit(index);
 	});
 
 
