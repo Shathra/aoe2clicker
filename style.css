@@ -24,7 +24,6 @@ a {
 	width: 1000px;
 	border: 5px #c69b5f solid;
 	background-color: #ffffff;
-	/*background-color: #ffffff;*/
 }
 
 #clicker {
@@ -45,14 +44,12 @@ a {
 	width: 40px;
 	height: 40px;
 	background: rgba( 200, 200, 200, 0.6);
-	/*opacity: .6;*/
 	font-size: 20px;
 	line-height: 38px;
 	color: #000;
 	display: inline-block;
 	text-align: center;
 	font-weight: 700;
-	/*border: 5px solid #fff;*/
 	border-radius: 35px;
 	font-family: Helvetica Neue,Arial,Helvetica,Geneva,sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -66,12 +63,11 @@ a {
 #main {
 
 	background: #ffffff;
-	height: 500px;
+	height: 1200px;
 }
 
 #units {
 
-	/*padding-left: 15px;*/
 	width: 50%;
 	float: left;
 }
@@ -80,7 +76,6 @@ a {
 
 	padding-left: 15px;
 	margin-bottom: 10px;
-	/*border: 1px solid #cccccc;*/
 }
 
 .unit img, .building img {
